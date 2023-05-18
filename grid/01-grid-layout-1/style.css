@@ -21,18 +21,22 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  grid-area: h;
 }
 
 .sidebar {
   background-color: #FF7755;
+  grid-area: s;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-area: n;
 }
 
 .article {
   background-color: #bccbde;
+  grid-area: a;
 }
 
 .article p {
@@ -44,4 +48,16 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-area: f;
+}
+
+.container {
+  display: grid;
+  grid-template: 100px 100px 500px 100px / 300px 900px ;
+  gap: 15px;
+  grid-template-areas: 
+  "h h"
+  "s n"
+  "s a"
+  "f f";
 }
